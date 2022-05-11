@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FBD759"
+    tools:context=".LastFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="491dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="12dp">
+
+        <ImageView
+            android:id="@+id/img_yangilik"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center|top"
+            android:layout_margin="20dp"
+            android:src="@drawable/yangiliklar" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="25dp"
+            android:text="Beeline TV foydalanuvchilariuchun ajoyib yangilik!\n11.05.2022
+Sevimli komedik shoular, mashhur
+teledasturlar, rus seriallari va filmlarini
+obunasida tomosha qiling.
+- bu rus tilidagi eksklyuziv
+kontentga ega onlayn kinoteatr: o'zlarining
+xususiy seriallari, yangi va ommabop filmlar,
+shuningdek, ko'ngilochar va sport
+telekanallarining eng yaxshi loyihalari,
+bizning Beeline TV ilovamizda endi mavjud.
+Obunalarning marxi:
+Kunlik obuna - 799 so'm/kun
+30 kunlik obuna - 10 999 so'm/30 kunga
+Ilovani yuklab olish:
+Bosh sahifa
+Xarajatlarim
+BC
+Tariflar
+Beeline Club
+(?"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

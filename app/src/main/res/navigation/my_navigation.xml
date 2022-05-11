@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ramizbek.aliyev.ussd.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="ramizbek.aliyev.ussd.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_internetPaketFragment"
+            app:destination="@id/internetPaketFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_tariflarFragment"
+            app:destination="@id/tariflarFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_typeSMS"
+            app:destination="@id/typeSMS" />
+        <action
+            android:id="@+id/action_secondFragment_to_daqiqaFragment"
+            app:destination="@id/daqiqaFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_xizmatlarFragment"
+            app:destination="@id/xizmatlarFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_yangiliklarFragment"
+            app:destination="@id/yangiliklarFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_lastFragment"
+            app:destination="@id/lastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/internetPaketFragment"
+        android:name="ramizbek.aliyev.ussd.InternetPaketFragment"
+        android:label="fragment_internet_paket"
+        tools:layout="@layout/fragment_internet_paket" />
+    <fragment
+        android:id="@+id/tariflarFragment"
+        android:name="ramizbek.aliyev.ussd.TariflarFragment"
+        android:label="fragment_tariflar"
+        tools:layout="@layout/fragment_tariflar" />
+    <fragment
+        android:id="@+id/typeSMS"
+        android:name="ramizbek.aliyev.ussd.TypeSMS"
+        android:label="fragment_type_s_m_s"
+        tools:layout="@layout/fragment_type_s_m_s" />
+    <fragment
+        android:id="@+id/daqiqaFragment"
+        android:name="ramizbek.aliyev.ussd.DaqiqaFragment"
+        android:label="fragment_daqiqa"
+        tools:layout="@layout/fragment_daqiqa" />
+    <fragment
+        android:id="@+id/xizmatlarFragment"
+        android:name="ramizbek.aliyev.ussd.XizmatlarFragment"
+        android:label="fragment_xizmatlar"
+        tools:layout="@layout/fragment_xizmatlar" />
+    <fragment
+        android:id="@+id/yangiliklarFragment"
+        android:name="ramizbek.aliyev.ussd.YangiliklarFragment"
+        android:label="fragment_yangiliklar"
+        tools:layout="@layout/fragment_yangiliklar" />
+    <fragment
+        android:id="@+id/lastFragment"
+        android:name="ramizbek.aliyev.ussd.LastFragment"
+        android:label="fragment_last"
+        tools:layout="@layout/fragment_last" />
+</navigation>
